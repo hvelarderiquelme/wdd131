@@ -135,7 +135,7 @@ a:hover{
 .subsection{
     grid-column: 1 / 4;
     position: absolute;
-    top: 450px;
+    top: 480px;
     margin: 2rem;
     border-bottom: solid #881600;
     justify-content: center;
