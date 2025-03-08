@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Horacio Velarde | Home Page">
+    <meta name="author" content="Horacio Velarde">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <title>WDD 131 - Dynanmic Web Fundamentals - Horacio Velarde</title>    
 </head>
 <body>
-    <H1>WDD 131 | Horacio Velarde Riquelme</H1>
+    <header>
+        <div class="header1"><h1>WDD 131: Dynamic Web Fundamentals - Horacio Velarde</h1></div>
+        <nav>
+            <ul class="head-navigation">
+                <li><a href="https://www.linkedin.com/in/horacio-velarde-riquelme/">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/5?lang=eng&id=p13#p13/">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="section-layout">
+            <section class="card">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                </div>   
+                 <div class="middle-section">
+                    <p>My name is Horacio, but I prefer the English spelling Horatio. I was born in Mexico but I have been living in Canada almost half of my life, so I am as much mexican as canadian. Before I moved to Canada, I worked as an instructor in Monterrey Institute of Technology in Mexico City. I arrived in Canada 23 years ago and since then I have worked as a carpenter, a cabinet maker and a telecommunications technician. Recently I took a voluntary separation package from the company I was working for and started my Bachelor's degree in Software Development. I play electric guitar and love watching movies with my family. But my favourite thing to do is to gather family and friends around a table filled with food and spend the time sharing stories.</p>
+                </div>
+                
+                <div class="my-picture"><img src="images/profile.jpg" alt="profile"></div>
+                    
+                <div class="subsection">
+                    <h2>Alberta, Canada</h2>
+                </div>
+                
+                <div class="alberta-info">    
+                    <div >
+                        <img class="flags" src="images/canadaFlag.png" alt="canada">
+                    </div>    
+                    <div>
+                        <img class="flags" src="images/mexicoflag.png" alt="mexico">
+                    </div>
+                    <div>    
+                        <p>Canada is the second largest country in the world, whereas Mexico is the fourteenth. I live in the province of Alberta which is home to the world's largest beaver dam, visible from space. Alberta is one of the only two landlocked provinces in Canada, together with Saskatchewan. It also has six UNESCO-designated World Heritage Sites: The Canadian Rocky Mountain Parks, Dinosour Provincial Park, Head-Smashed-In Buffalo Jump, Waterton Glacier International Park, Wood Buffalo National Park and Writing-on-Stone Provincial Park.</p> 
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="section-header">
+                    <h2>Web Dev Resources</h2>
+                </div>
+                <div class="links">
+                    <nav>
+                        <ul class="web-resources">
+                            <li><a href="https://dev.to/">Dev.to</a></li>
+                            <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                            <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                            <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                            <li><a href="https://www.udemy.com/">Udemy</a></li>
+                            <li><a href="https://placehold.co/">Image Placeholder</a></li>
+                        </ul>
+                    </nav>
+                </div>            
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&COPY;<span id="currentyear"><script>
+            const currentYear = new Date();
+            let year = currentYear.getFullYear();
+            document.getElementById("currentyear").innerHTML = year;
+            </script>&#x1F3B8; Horacio Velarde Riquelme &#x1F3B8; Canada</span></p>
+        
+        <p>Last modified:&nbsp;<span id="lastModified"><script>
+            const date = new Date(document.lastModified);
+            document.getElementById("lastModified").innerHTML = date;
+            </script></span></p>
+    </footer>
 </body>
 </html>
