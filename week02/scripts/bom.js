@@ -1,12 +1,28 @@
-const ipt = document.querySelector("input");
-const btn = document.querySelector("button");
 const list = document.querySelector("ul");
+            const ipt = document.querySelector("input");
+            const btn = document.querySelector("button");
+            
+            btn.addEventListener('click', () => {
+                const chapter = ipt.value;
+                ipt.value = '';
+                        
+                const liElmt = document.createElement('li');
+                const spn = document.createElement('span');
+                const delBtn = document.createElement('button');
+                
+                liElmt.appendChild(spn);
+                spn.textContent = chapter;
+                liElmt.appendChild(delBtn);
+                delBtn.textContent = 'X';
+                list.appendChild(liElmt);
 
-const liElmt = document.createElement('li');
-const delBtn = document.createElement('button');
+                delBtn.addEventListener('click', () => {
 
-liElmt.textContent = ipt.value;
-delBtn.textContent = 'X';
-liElmt.append(delBtn);
-liElmt.append(list);
+                    list.removeChild(liElmt);
+
+                })
+
+                ipt.focus();
+            });
+
 
