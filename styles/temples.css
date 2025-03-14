@@ -46,10 +46,11 @@ nav a {
     color: #F8F8F7;
 }
 
-nav a::hover{
-    font-style: italic;
+nav a:hover{
+    font-style: oblique;
+    text-decoration: underline;
     color: #F5F5C3;
-}
+} 
 
 ul{
     list-style-type: none;
