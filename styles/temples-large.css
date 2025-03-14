@@ -27,8 +27,7 @@ nav ul {
 }
 
 nav ul li{
-    flex: 1 1 100%;
-    justify-items:l;   
+    flex: 1 1 100%;   
 }
 
 main{   
