@@ -77,16 +77,8 @@
     </main>
 
     <footer>
-        <p>&COPY;<span id="currentyear"><script>
-            const currentYear = new Date();
-            let year = currentYear.getFullYear();
-            document.getElementById("currentyear").innerHTML = year;
-            </script>&#x1F3B8; Horacio Velarde Riquelme &#x1F3B8; Canada</span></p>
-        
-        <p>Last modified:&nbsp;<span id="lastModified"><script>
-            const date = new Date(document.lastModified);
-            document.getElementById("lastModified").innerHTML = date;
-            </script></span></p>
+        <p id="current-year"></p>
+        <p id="last-modified"></p>
     </footer>
 </body>
 </html>
