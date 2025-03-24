@@ -20,4 +20,4 @@ const spanElmt = document.createElement("span");
 document.querySelector('#current-year').innerHTML = '&COPY;' +  year + '&#x1F3B8;Horacio Velarde Riquelme &#x1F3B8; Canada';
 document.querySelector('#last-modified').innerHTML = date;
 ElmtYear.appendChild(spanElmt);
-ElemtLastModified.appendChild(spanElmt);          
+ElmtLastModified.appendChild(spanElmt);          
