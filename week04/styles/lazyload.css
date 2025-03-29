@@ -1,0 +1,29 @@
+main{
+ justify-items: center;   
+}
+
+h1{
+    color: yellowgreen;
+}
+
+img{
+    display: block;
+    background-color: black;
+    animation: fade;
+    animation-duration: 10s;
+    
+}
+
+footer{
+    justify-items: center;
+}
+
+@keyframes fade{
+0% {
+    opacity: 0;
+}
+
+100%{
+    opacity: 1;
+}
+}
