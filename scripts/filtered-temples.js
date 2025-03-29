@@ -107,11 +107,7 @@ const temples = [
   ];
 
 displayTempleInfo(temples);
-// const nonutahLink = document.querySelector("#nonutah");
-// nonutahLink.addEventListener('click', ()=>{
-//     let noutah = temples.filter(temple => !temple.location.includes("Utah"));
-//     displayTempleInfo(noutah);
-// });
+
 const oldTemples = document.querySelector("#old");
 const newTemples = document.querySelector("#new");
 const largeTemples = document.querySelector("#large");
@@ -159,7 +155,7 @@ function displayTempleInfo(filteredtemples) {
         area.innerHTML = `<span class="label">Square Footage:</span> ${temple.area} sq ft`;
 
         picture.setAttribute("src", temple.imageUrl);
-        picture.setAttribute("alt", `$temple.templeName} Temple`);
+        picture.setAttribute("alt", `${temple.templeName} Temple`);
         picture.setAttribute("loading", "lazy");
 
         info.appendChild(name);
