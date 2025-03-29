@@ -63,7 +63,7 @@ ul{
     list-style-type: none;
 }
 
-h2, figure, figcaption{
+figure, figcaption{
     display: grid;
     justify-content: center;
 }

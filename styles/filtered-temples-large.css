@@ -36,11 +36,11 @@ main{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-h2{
+/* h2{
     display: grid;
     grid-column: 1 / 4;
     justify-content: center;
-}
+} */
 
 figcaption{
     text-align: center;
