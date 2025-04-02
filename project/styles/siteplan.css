@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --header-footer: #FCF4A9;
+    --main: #DBFCA9;
+    --sections: #FCCAA9;
+    --header-footer-text: #1F5304;
+    --main-text: #0A1490;
+    --sections-text:#590303;
+}
+
+body{
+    background-color: var(--sections);
+}
+
+header{
+    display: grid;
+    grid-template-columns: 10% 20% 50%;
+    background-color: var(--header-footer);
+    color: var(--header-footer-text);
+    height: 12rem;
+    padding: 2rem;
+}
+
+main{
+    background-color: var(--main);
+    color: var(--main-text);
+    height: 16rem;
+    padding: 5rem;
+}
+
+footer{
+    background-color: var(--header-footer);
+    color: var(--header-footer-text);
+    height: 5rem;
+}
