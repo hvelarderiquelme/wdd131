@@ -44,7 +44,7 @@ const products = [
 fillSelectBox(products);
   
 function fillSelectBox(products){
-    document.querySelector("#product").innerHTML = `<option value="">Select a product...</option>`;
+    // document.querySelector("#product").innerHTML = `<option value="">Select a product...</option>`;
     
     products.forEach(product => {
         
