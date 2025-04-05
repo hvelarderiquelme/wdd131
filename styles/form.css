@@ -1,14 +1,13 @@
 :root{
-    --main-color:#dc968e;
-    --banner-color:#e9d6b9;
-    --forground-color:#000000;
-   
-    --fieldset-color:#de867c;
-    --box-background: #DEB77C;
+    --main-color:#9EB2C5;
+    --banner-color:#D8E0E8;
+    --forground-color:#080101;
+    --fieldset-color:#D8E8E8;
+    --box-background: #D8D9E8;
 }
 
 body{
-    background-image: linear-gradient( red, white, white, red);
+    background-image: linear-gradient(var(--main-color),var(--banner-color),var(--main-color));
     
 }
 header,footer{
@@ -44,7 +43,7 @@ header,footer{
 .rf1 input[type="date"],
 .rf1 textarea,
 .rf1 input[type="text"]{
-    color: bluvar(--forground-color);
+    color: var(--forground-color);
     margin-left: 1rem;
     margin-top: 8px;
         
@@ -52,15 +51,20 @@ header,footer{
 
 .rf1 input[type="submit"]{
     border: none;
-    background-image: linear-gradient(#9c2c13,#6f200e);
-    color: #fff;
+    background-image: linear-gradient(var(--main-color),var(--fieldset-color));
+    color: var(--forground-color);
     border-radius: 6px;
     padding: .8rem;
     width: 50%;
     margin-top: 1rem;
     margin-left: 25%;
-    box-shadow: 1px 1px 4px #999;
+    box-shadow: 1px 1px 4px var(--forground-color);
+    font-size: larger;
+    font-weight: 600;
+    cursor: pointer;
+    
 }
+
 
 .rf1 textarea{
     width: 80%;
@@ -88,7 +92,7 @@ header,footer{
     margin-right: 1rem;
     height: 20px;
     width: 20px;
-    background-color: #eee;
+    color: var(--forground-color);
 }
 
 .rf1 input[type="checkbox"]{

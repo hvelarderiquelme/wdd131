@@ -1,0 +1,22 @@
+@media  screen and (min-width: 640px){
+    
+header{
+    
+    justify-content: center;
+}
+
+div{
+    justify-content: center;
+}
+
+label{
+    font-weight: bold;
+}
+
+footer{
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+}/*end of media declaration*/
