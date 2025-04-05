@@ -9,25 +9,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
+    <script src="scripts/site-plan.js" defer></script>
     <title>Site project</title>
 </head>
 <body>
-    <header>
-        <div>
-            <img src="images/logo.jfif" height="100" width="auto">
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.jfif" alt="Velardevictuals Logo" height="100">
         </div>    
-        <div>    
+        <div class="site-name">    
             <h1>Site Name:</h1>
-            <h3>velardevictuals</h3>
+            <h3>velardevictuals.org</h3>
         </div>
-        <p>My background is diverse, my family comes from Spain, France and Mexico mainly. My wife's family comes from Sweden, Scotland and England. Which makes my children even more diverse. We are a amalgamation of cultures and obviously this also reflects in our cuisine. The idea of this site is to provide recipes from our family's heritage so that we can share it with our loved ones, both family and friends.</p>
+        <p>My background is very diverse, my family comes from Spain, France and Mexico mainly. My wife's family comes from Sweden, Scotland and England. Which makes my children even more diverse. We are a amalgamation of cultures and obviously this also reflects in our cuisine. The idea of this site is to provide recipes from our family's heritage so that we can share it with our loved ones, both family and friends.</p>
     </header>
    <main>
-        <div><h3>Site purpose:</h3></div>
-        <div><p>To introduce my children to their family's cuisine, and have a record of the recipes they love the most. Giving them access to them anywhere and anytime.</p></div>
-        <div><h3>Color Schema</h3></div>
+        <div class="site-purpose">
+            <div><h2>Site purpose:</h2></div>
+            <div><p>To introduce my children to their family's cuisine, and have a record of the recipes they love the most. Giving them access to them anywhere and anytime.</p></div>
+        </div>
+
+        <div>        
+            <div><h2>Scenarios:</h2></div>
+            <div class="scenarios">           
+                <ul>
+                    <li>What kind of dishes would I find in this site?</li>
+                    <li>Are they athentic dishes or have they been influenced by other flavours?</li>
+                    <li>Is this a recepie book or a informational site</li>
+                    <li>Do you offer substotute ingredients in case they ar enot found in teh place where I live</li>
+                    <li>Is there a way to contact you or comunicate with you regarding some of the dishes presented here?</li>    
+                </ul>
+            </div>    
+        </div>
+
+        
         <div>
-            <p>The colors I will use will be:
+            <div><h2>Color Schema</h2></div>
+            <div class="color-schema">
+                <label>The colors I will use will be:</label>
                 <ul>
                     <li>#FCF4A9 for heading and footer backgrounds</li>
                     <li>#1F5304 for the text</li>
@@ -36,11 +56,21 @@
                     <li>#FCCAA9 for sections backgrounds</li>
                     <li>#590303 for contrast text</li>
                 </ul>
-            </p>
+            </div>        
+        </div>    
+            
+        <div>
+            <div><h2>Typography:</h2></div>
+                <div class="typography">
+                <label>There will be one type of font for this project. Roboto style. With different sizes, weights and effects for header and footer, navigation bars and text content</label>
+            </div>
         </div>
+
+
     </main>
     <footer>
-        <div><h3>Footer information</h3></div>
+        <p id="current-year"></p>
+        <p id="last-modified"></p>
     </footer>
 </body>
 </html>
