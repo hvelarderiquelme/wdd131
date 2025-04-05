@@ -15,6 +15,7 @@ else{
     let clearH2 = document.querySelector("h2");
     clearH2.innerHTML = "";
     visits.textContent = `Thank you for taking the time to post our first review.`
+    numVisits++;
 }
 
 /*Increment the number of visits by one.*/
