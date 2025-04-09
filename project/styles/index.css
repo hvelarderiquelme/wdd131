@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --header-footer: #FCF4A9;
+    --main: #DBFCA9;
+    --sections: #fdf8f5;
+    --header-footer-text: #1F5304;
+    --main-text: #0A1490;
+    --sections-text:#590303;
+    --body-color: #c7f1c9;
+}
+
+/*CSS declaration for Home Page*/
+/*Body and header CSS formatting*/
+
+body{
+    background-color: var(--body-color);
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+} 
+
+header, footer{
+    background-color: var(--header-footer);
+    color: var(--header-footer-text);
+    justify-items: center;
+    padding: 2rem;
+    border: 2px solid var(--header-footer-text);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header h2{
+    font-family: cursive;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav a{
+    display: none;
+    margin: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--header-footer-text);
+    font-size: 1.25rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+    
+}
+
+/*Main CSS Formatting*/
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: var(--main);
+    margin: 0;
+    justify-items: center;
+    color: var(--main-text);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
+main p{
+    padding: 2rem;
+}
+
+main img{
+    padding-bottom: .75rem;
+}
+
+main h2{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.mexico,
+.france,
+.spain{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem;
+    
+}
+
+.mexico img,
+.france img,
+.spain img{
+    width: 200px;
+    padding-left: 1rem;
+    justify-content: center;
+}
+
+
+footer{    
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+/*hamburger button effect*/
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: var(--header-footer-text);
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.open a{
+    display: block;
+}
+
+nav a:hover{
+    font-style: oblique;
+    font-weight: bold;
+}
