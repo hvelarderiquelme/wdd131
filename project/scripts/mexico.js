@@ -25,22 +25,22 @@ hamButton.addEventListener('click', () =>{
 const recipesArray = [
     {
         name:"Tamales",
-        ingredients: "8 kilos, 9 spoons, 3 wergr",
-        preparation: "efwfwefw",
-        pictureLocation:"C:\Users\hvela\OneDrive\Desktop\Pathway\WDD131\wdd131\project\images\wireframeSitePlan-large.png"
+        ingredients: "1 kilo of maseca dough(prepared), 250 gr of vegetal shortening or lard, 1 tsp of baking powder, salt to taste, 2 cups of chicken broth",
+        preparation: "Mix all the ingredients until it becomes a uniform dough, if needed add more chicken broth. The consistency should be like an oatmeal podrige.",
+        pictureLocation:"images/tamales.webp"
 
     },
     {
         name:"Taquitos",
-        ingredients: "8 kilos, 9 spoons, 3 wergr, 50 froan",
-        preparation: "efwfwefw",
-        pictureLocation:"images/wireframeSitePlan-mobile"
+        ingredients: "Any leftover meat you have from previous meals(chicken/ground pork/ground beef/beefroast/pork roast), corn tortillas(soft)",
+        preparation: "Pull the meat if it is roast or chicken. Warm your tortillas so they dont break when you roll them. Place an amount of the meat n the tortilla and roll it tight. With two toothpicks hold the rolled tortilla closed. Make groups of three taquitos. In a pan pour avout half an inch of oil and heat on high. When the oil is ready lower the heat to a 75% and place the taquitos in it. Fry the taquitos flipping them once, you can have soft taquitos or hard taquitos, the difference is for how long you fry them.",
+        pictureLocation:"images/taquitos.webp"
     },
     {
         name:"Pozole",
-        ingredients: "9ij",
-        preparation: "efwfwefw",
-        pictureLocation:"/images/wireframeSitePlan-mobile"
+        ingredients: "1 kilogram of hominy,.5 kilogram of pork roast, 1 head of garlic, bay leaves, thyme, 1/2 onion, 2 ancho chiles, 2 tbsp chicken broth powder",
+        preparation: "Boil the hominy with the head of garlic and onion, cook the meat with salt, 2 garlic cloves and a quater of an onion on a seaprate pot. When cooked, grill the chile anchos and then boil them. Blend the chiles with the bay leaves, thyme and the garlic head from the hominy. Sautee the sauce and add chicken broth powder. Paste the sauce and added to the hominy, add the meat, cook together until boil. add salt to taste if needed.",
+        pictureLocation:"images/pozole.webp"
     }    
 ];    
     
@@ -92,11 +92,11 @@ function displayRecipeInfo(recipe){
         let photo = document.createElement("img");
         let ingredients = document.createElement("h3");
         let instructions = document.createElement("p");
-       
+        
 
-        name.innerHTML = `<label>${element.name}</label>`;
-        instructions.innerHTML = `${element.preparation}`
-        photo.setAttribute("src", "images/logo.jfif");
+        name.innerHTML = `<div>${element.name}</div>`;
+        instructions.innerHTML = `<span><label>Preparation:</label><br>${element.preparation}</span>`;
+        photo.setAttribute("src", element.pictureLocation);
         photo.setAttribute("alt", `${element.name}`);
         photo.setAttribute("loading", "lazy");
         
@@ -105,7 +105,7 @@ function displayRecipeInfo(recipe){
         for(let i=0; i < splitIngredients.length; i++){
             text += splitIngredients[i] + "<br>"
         }
-        ingredients.innerHTML = text;
+        ingredients.innerHTML = `<span><h3>Ingredients:</h3><br>${text}</span>`;
         
         //appends html elements
         info.appendChild(name);

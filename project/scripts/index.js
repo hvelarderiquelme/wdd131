@@ -7,7 +7,7 @@ const date = new Date(document.lastModified);
 let year = currentYear.getFullYear();
 const spanElmt = document.createElement("span");
 
-document.querySelector('#current-year').innerHTML = '&COPY;' +  year + ' 🌮 Horacio Velarde Riquelme 🌮 Canada';
+document.querySelector('#current-year').innerHTML = '&COPY;' +  year + ' 🥖🍷 Horacio Velarde Riquelme 🥖 🍷Canada';
 document.querySelector('#last-modified').innerHTML = date;
 ElmtYear.appendChild(spanElmt);
 ElmtLastModified.appendChild(spanElmt); 

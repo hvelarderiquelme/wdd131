@@ -36,8 +36,7 @@
     }
 
     main{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: block;
         max-width: 80%;
         border-radius: 10px;
         margin: 3rem 10%;
@@ -52,8 +51,13 @@
 
     .recipes{
         display: block;
-
     }
+
+    .recipes-list{
+        padding-bottom: 2rem;
+    }
+
+    
 
    footer{
         font-size: larger;
