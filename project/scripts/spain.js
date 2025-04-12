@@ -21,99 +21,79 @@ hamButton.addEventListener('click', () =>{
     hamButton.classList.toggle('open');
 });
 
-//array fo recipes. Any amount of recipes can be added
-const recipesArray = [
-    {
-        name:"Tamales",
-        ingredients: "8 kilos, 9 spoons, 3 wergr",
-        preparation: "efwfwefw",
-        pictureLocation:"C:\Users\hvela\OneDrive\Desktop\Pathway\WDD131\wdd131\project\images\wireframeSitePlan-large.png"
-
-    },
-    {
-        name:"Taquitos",
-        ingredients: "8 kilos, 9 spoons, 3 wergr, 50 froan",
-        preparation: "efwfwefw",
-        pictureLocation:"images/wireframeSitePlan-mobile"
-    },
-    {
-        name:"Pozole",
-        ingredients: "9ij",
-        preparation: "efwfwefw",
-        pictureLocation:"/images/wireframeSitePlan-mobile"
-    }    
-];    
+// //array fo recipes. Any amount of recipes can be added
+// const recipesArray = [];    
     
-//Shows the recipes' names
-displayRecipesList(recipesArray);
+// //Shows the recipes' names
+// displayRecipesList(recipesArray);
 
-//More recipes can be added and also different categories cpuld be added in the future. Example, mains, salsas, soups, desserts, etc
-const Tamales = document.querySelector("#Tamales");
-const Taquitos = document.querySelector("#Taquitos");
-const Pozole = document.querySelector("#Pozole");
+// //More recipes can be added and also different categories cpuld be added in the future. Example, mains, salsas, soups, desserts, etc
+// const Tamales = document.querySelector("#Tamales");
+// const Taquitos = document.querySelector("#Taquitos");
+// const Pozole = document.querySelector("#Pozole");
 
-//respondes to click of the mouse and calls for recipe to be displayed
-Tamales.addEventListener("click", ()=>{
-    let recipe = recipesArray.filter(recipe => recipe.name == "Tamales");
-    displayRecipeInfo(recipe);
-});
+// //respondes to click of the mouse and calls for recipe to be displayed
+// Tamales.addEventListener("click", ()=>{
+//     let recipe = recipesArray.filter(recipe => recipe.name == "Tamales");
+//     displayRecipeInfo(recipe);
+// });
 
-Taquitos.addEventListener("click", ()=>{
-    let recipe = recipesArray.filter(recipe => recipe.name == "Taquitos");
-    displayRecipeInfo(recipe);
-});
+// Taquitos.addEventListener("click", ()=>{
+//     let recipe = recipesArray.filter(recipe => recipe.name == "Taquitos");
+//     displayRecipeInfo(recipe);
+// });
 
-Pozole.addEventListener("click", ()=>{
-    let recipe = recipesArray.filter(recipe => recipe.name == "Pozole");
-    displayRecipeInfo(recipe);
-});
+// Pozole.addEventListener("click", ()=>{
+//     let recipe = recipesArray.filter(recipe => recipe.name == "Pozole");
+//     displayRecipeInfo(recipe);
+// });
 
-//Displays the list of recipes
-function displayRecipesList(Recipes){
+// //Displays the list of recipes
+// function displayRecipesList(Recipes){
     
-    Recipes.forEach(recipe =>{
-        let info = document.querySelector("#recipes-list");
-        let name = document.createElement("li");
+//     Recipes.forEach(recipe =>{
+//         let info = document.querySelector("#recipes-list");
+//         let name = document.createElement("li");
         
-        name.setAttribute("id", recipe.name);
-        name.innerHTML = `<label>${recipe.name}</label>`;
-        info.appendChild(name);
-        document.querySelector("main").appendChild(info);
-    });
-}//end of functiond declaration
+//         name.setAttribute("id", recipe.name);
+//         name.innerHTML = `<label>${recipe.name}</label>`;
+//         info.appendChild(name);
+//         document.querySelector("main").appendChild(info);
+//     });
+// }//end of functiond declaration
 
-//Grabs the corresponding recipe and displays photo, ingredients and preparation instructions
-function displayRecipeInfo(recipe){
-    document.querySelector("#recipe").innerHTML = "";
-    recipe.forEach(element => {
-        const splitIngredients = (element.ingredients).split(",");
-        let info = document.querySelector("#recipe");
-        let name = document.createElement("label")
-        let photo = document.createElement("img");
-        let ingredients = document.createElement("h3");
-        let instructions = document.createElement("p");
+// //Grabs the corresponding recipe and displays photo, ingredients and preparation instructions
+// function displayRecipeInfo(recipe){
+//     document.querySelector("#recipe").innerHTML = "";
+//     recipe.forEach(element => {
+//         const splitIngredients = (element.ingredients).split(",");
+//         let info = document.querySelector("#recipe");
+//         let name = document.createElement("label")
+//         let photo = document.createElement("img");
+//         let ingredients = document.createElement("h3");
+//         let instructions = document.createElement("p");
        
 
-        name.innerHTML = `<label>${element.name}</label>`;
-        instructions.innerHTML = `${element.preparation}`
-        photo.setAttribute("src", "images/logo.jfif");
-        photo.setAttribute("alt", `${element.name}`);
-        photo.setAttribute("loading", "lazy");
+//         name.innerHTML = `<label>${element.name}</label>`;
+//         instructions.innerHTML = `${element.preparation}`
+//         photo.setAttribute("src", "images/logo.jfif");
+//         photo.setAttribute("alt", `${element.name}`);
+//         photo.setAttribute("loading", "lazy");
         
-        //splits the ingredients string to display in rows
-        let text="";
-        for(let i=0; i < splitIngredients.length; i++){
-            text += splitIngredients[i] + "<br>"
-        }
-        ingredients.innerHTML = text;
+//         //splits the ingredients string to display in rows
+//         let text="";
+//         for(let i=0; i < splitIngredients.length; i++){
+//             text += splitIngredients[i] + "<br>"
+//         }
+//         ingredients.innerHTML = text;
         
-        //appends html elements
-        info.appendChild(name);
-        info.appendChild(photo);
-        info.appendChild(ingredients);
-        info.appendChild(instructions);
-        document.querySelector("main").appendChild(info);
+//         //appends html elements
+//         info.appendChild(name);
+//         info.appendChild(photo);
+//         info.appendChild(ingredients);
+//         info.appendChild(instructions);
+//         document.querySelector("main").appendChild(info);
         
-    });
+//     });
 
-}//end of function declaration
+// }//end of function declaration

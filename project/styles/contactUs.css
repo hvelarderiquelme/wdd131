@@ -1,0 +1,134 @@
+:root{
+    --header-footer: #FCF4A9;
+    --main: #DBFCA9;
+    --sections: #fdf8f5;
+    --header-footer-text: #1F5304;
+    --main-text: #0A1490;
+    --sections-text:#590303;
+    --body-color: #c7f1c9;
+}
+
+body{
+    background-color: var(--body-color);
+    
+}
+
+header, footer{
+    background-color: var(--header-footer);
+    color: var(--header-footer-text);
+    justify-items: center;
+    padding: 2rem;
+    border: 2px solid var(--header-footer-text);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 6px;
+    margin-top: 2rem;
+}
+
+/*-----Form Styling------*/
+.review,
+.contact{
+        max-width: 100%;
+        border-radius: 10px;
+        color: var(--main-text);
+        margin-top: 1rem;
+       
+    }
+
+.contact{
+    margin-bottom: 10rem;
+}
+
+
+.contact select{
+    font-weight: 600;
+    color: var(--main-text);
+    font-weight: 600;
+}
+
+.rf1 legend{
+    color: var(--main-text);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+}
+
+.rf1 fieldset{
+    display: block;
+    background-color: var(--main);
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+    border-radius: 6px;
+    border-color: var(--header-footer-text);
+    border-style: double;
+    margin-bottom: .75rem;
+    font-weight: 500;
+    
+}
+
+.rf1 label{
+    display: block;
+    color: var(--forground-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 1rem 0 0 1rem;
+    font-size: large;
+}
+
+.rf1 input[type="submit"]{
+    border: none;
+    background-color: var(--header-footer);
+    color: var(--forground-color);
+    border-radius: 6px;
+    padding: .8rem;
+    width: 50%;
+    margin-top: 1rem;
+    margin-left: 25%;
+    box-shadow: 1px 1px 4px var(--main-text);
+    font-size: larger;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+.rf1 textarea{
+    width: 80%;
+    height: 150px;
+    background-color: var(--header-footer);
+    border-radius: 6px;
+    border: solid 2px var(--header-footer-text);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--main-text);
+}
+
+.rf1 select:focus,
+.rf1 input[type="email"]:focus,
+.rf1 input[type="text"]:focus{
+    border: 2px solid var(--main-text);
+}
+.rf1 select,
+.rf1 input[type="email"],
+.rf1 input[type="text"]{
+    padding: .75rem;
+    border-radius: 6px;
+    border: solid 2px var(--header-footer-text);
+    background-color: var(--header-footer);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--main-text);
+}
+
+.rf1 input[type="radio"]{
+    margin-right: 1rem;
+    height: 20px;
+    width: 20px;
+}
+
+.rf1 h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--main-text);
+}
+
+footer{
+    font-weight: 500;
+}
+
